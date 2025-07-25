@@ -4,19 +4,15 @@
 
 在此衷心感谢 FastAdmin 原作者及其团队为开源社区所做出的杰出贡献
 
+项目拉下来后，在根目录执行命令 composer insatll 安装php依赖包，执行命令 bower install 安装前端依赖包
+
 ## 界面截图
 
-* 登录页对比：
-
-<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/login_new.png" style="width:500px"> <img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/login_old.png" style="width:500px">
-
-* 后台管理页对比：
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/login_new.png" style="width:800px">
   
-<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/admin_new.png" style="width:500px"> <img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/admin_old.png" style="width:500px">
-
-* Layer弹窗对比：
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/admin_new.png" style="width:800px">
   
-<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/layer_new.png" style="width:500px"> <img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/layer_old.png" style="width:500px">
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/layer_new.png" style="width:800px">
 
 ## 已有的FastAdmin项目，如何升级成FastAdmin-Nova
 
