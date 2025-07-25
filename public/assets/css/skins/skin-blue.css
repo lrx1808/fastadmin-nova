@@ -1,0 +1,291 @@
+
+/* 更加现代化风格的 BLUE 风格 */
+
+.skin-blue .main-header .navbar-toggle {
+  color: #606266;
+}
+
+.skin-blue .main-header .navbar-brand {
+  color: #606266;
+  border-right: 1px solid #ebeef5;
+}
+
+.skin-blue .main-header .navbar {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.skin-blue .main-header .navbar .nav > li > a {
+  color: #606266;
+  transition: all 0.3s;
+}
+
+.skin-blue .main-header .navbar .nav > li > a:hover,
+.skin-blue .main-header .navbar .nav > li > a:active,
+.skin-blue .main-header .navbar .nav > li > a:focus,
+.skin-blue .main-header .navbar .nav .open > a,
+.skin-blue .main-header .navbar .nav .open > a:hover,
+.skin-blue .main-header .navbar .nav .open > a:focus,
+.skin-blue .main-header .navbar .nav > .active > a {
+  background: #ecf5ff;
+  color: #409eff;
+}
+
+.skin-blue .main-header .navbar .nav-addtabs li > .close-tab {
+  color: #409eff;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle {
+  color: #606266;
+  transition: all 0.3s;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+  color: #409eff;
+  background: #ecf5ff;
+}
+
+.skin-blue .main-header .navbar > .sidebar-toggle {
+  color: #606266;
+  border-right: 1px solid #ebeef5;
+}
+
+.skin-blue .main-header .navbar .navbar-nav > li > a {
+  border-right: 1px solid #ebeef5;
+}
+
+.skin-blue .main-header .navbar .navbar-custom-menu .navbar-nav > li > a,
+.skin-blue .main-header .navbar .navbar-right > li > a {
+  border-right-width: 0;
+}
+
+/* Logo样式 */
+.skin-blue .main-header > .logo {
+  color: #fff;
+  border-bottom: 0 solid transparent;
+  border-right: 1px solid #304156;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.skin-blue .main-header > .logo:hover {
+  background-color: #304156;
+}
+
+@media (max-width: 767px) {
+  .skin-blue .main-header > .logo {
+    background-color: #fff;
+    color: #303133;
+    border-bottom: 0 solid transparent;
+    border-right: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  }
+  .skin-blue .main-header > .logo:hover {
+    background-color: #304156;
+  }
+}
+
+.skin-blue .main-header li.user-header {
+  background-color: #304156;
+}
+
+.skin-blue .main-header .nav-addtabs > li > a,
+.skin-blue .main-header .nav-addtabs > li.active > a {
+  border-right-color: transparent;
+}
+
+.skin-blue .content-header {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* 侧边栏样式 */
+.skin-blue .wrapper,
+.skin-blue .main-sidebar,
+.skin-blue .left-side {
+  background-color: #304156;
+}
+
+.skin-blue .user-panel > .info,
+.skin-blue .user-panel > .info > a {
+  color: #fff;
+}
+
+.skin-blue .sidebar-menu .treeview-menu {
+  padding-left: 5px;
+}
+
+.skin-blue .sidebar-menu > li.header {
+  color: #909399;
+  background: #263445;
+}
+
+.skin-blue .sidebar-menu > li:hover > a,
+.skin-blue .sidebar-menu > li.active > a {
+  color: #fff;
+  background: #1f2d3d;
+  border-left-color: #409eff;
+}
+
+.skin-blue .sidebar-menu > li > .treeview-menu {
+  background: #1f2d3d;
+}
+
+.skin-blue .sidebar a {
+  color: #bfcbd9;
+  transition: all 0.3s;
+}
+
+.skin-blue .sidebar a:hover {
+  text-decoration: none;
+}
+
+.skin-blue .treeview-menu > li > a {
+  color: #bfcbd9;
+}
+
+.skin-blue .treeview-menu > li.active > a,
+.skin-blue .treeview-menu > li > a:hover {
+  color: #409eff;
+}
+
+/* 搜索表单 */
+.skin-blue .sidebar-form {
+  border-radius: 4px;
+  border: 1px solid #4b6095;
+  background-color: #263445;
+  margin: 10px 10px;
+  transition: all 0.3s;
+}
+
+.skin-blue .sidebar-form input[type="text"],
+.skin-blue .sidebar-form .btn {
+  box-shadow: none;
+  background-color: #263445;
+  border: 1px solid transparent;
+  height: 35px;
+  transition: all 0.3s;
+}
+
+.skin-blue .sidebar-form input[type="text"] {
+  color: #bfcbd9;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+}
+
+.skin-blue .sidebar-form input[type="text"]:focus,
+.skin-blue .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  color: #606266;
+}
+
+.skin-blue .sidebar-form input[type="text"]:focus + .input-group-btn {
+  background: #fff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0;
+}
+
+.skin-blue .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #fff;
+}
+
+.skin-blue .sidebar-form .btn {
+  color: #bfcbd9;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 0;
+}
+
+.skin-blue .sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+  padding-left: 12px;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .skin-blue.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right) {
+    margin-left: -3px;
+  }
+}
+
+/* 占位符颜色 */
+.skin-blue .sidebar-form input[type="text"]::-moz-placeholder {
+  color: #bfcbd9;
+  opacity: 1;
+}
+
+.skin-blue .sidebar-form input[type="text"]:-ms-input-placeholder {
+  color: #bfcbd9;
+}
+
+.skin-blue .sidebar-form input[type="text"]::-webkit-input-placeholder {
+  color: #bfcbd9;
+}
+
+.skin-blue .sidebar-form input[type="text"],
+.skin-blue .sidebar-form .btn {
+  color: #bfcbd9;
+}
+
+/* 移动端样式 */
+@media (max-width: 767px) {
+  .skin-blue.multiplenav .main-header .navbar {
+    background-color: #409eff;
+  }
+
+  .skin-blue.multiplenav .main-header .navbar .nav > li > a {
+    color: #fff;
+  }
+
+  .skin-blue.multiplenav .main-header .navbar .nav > li > a:hover,
+  .skin-blue.multiplenav .main-header .navbar .nav > li > a:active,
+  .skin-blue.multiplenav .main-header .navbar .nav > li > a:focus,
+  .skin-blue.multiplenav .main-header .navbar .nav .open > a,
+  .skin-blue.multiplenav .main-header .navbar .nav .open > a:hover,
+  .skin-blue.multiplenav .main-header .navbar .nav .open > a:focus,
+  .skin-blue.multiplenav .main-header .navbar .nav > .active > a {
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+
+  .skin-blue.multiplenav .main-header .navbar .nav-addtabs li > .close-tab {
+    color: #fff;
+  }
+
+  .skin-blue.multiplenav .main-header .navbar .sidebar-toggle {
+    color: #fff;
+  }
+
+  .skin-blue.multiplenav .main-header .navbar .sidebar-toggle:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .skin-blue.multiplenav .main-header > .logo {
+    background-color: #409eff;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+  }
+
+  .skin-blue.multiplenav .main-header > .logo:hover {
+    background-color: #66b1ff;
+  }
+
+  .skin-blue.multiplenav .sidebar .mobilenav a.btn-app {
+    background: #409eff;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  .skin-blue.multiplenav .sidebar .mobilenav a.btn-app.active {
+    background: #fff;
+    color: #409eff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  }
+}

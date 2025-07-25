@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {include file="common/meta" /}
+
+    <style type="text/css">
+        body {
+            color: #666;
+            background-size: cover;
+            background-color: #e8edf0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-right: 0;
+        }
+
+        .login-screen {
+            max-width: 490px;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .login-screen .well {
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+            padding: 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            transform: scale(0.9);
+        }
+
+        .login-form {
+            padding: 40px 30px;
+            position: relative;
+            z-index: 99;
+        }
+
+        .profile-name-card {
+            margin: 0 0 25px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        #login-form .input-group {
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        #login-form .form-control {
+            height: 46px;
+            font-size: 15px;
+            border: 1px solid #eee;
+            padding: 10px 15px;
+            transition: all 0.3s;
+            border-radius: 0;
+        }
+
+        #login-form .input-group:first-of-type .input-group-addon:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        #login-form .input-group:not(:last-of-type) .form-control {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        #login-form .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.25);
+        }
+
+        #login-form .input-group-addon {
+            background: #f8f9fa;
+            border: 1px solid #eee;
+            color: #667eea;
+            padding: 0 15px;
+        }
+
+        #login-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            height: 46px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        #login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+            color: #ffffff;
+        }
+
+        .form-group.checkbox {
+            margin: 20px 0;
+        }
+
+        .form-group.checkbox label {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .input-group-addon img {
+            width: 120px;
+            height: 46px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        #login-btn {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        #login-btn:hover {
+            color: #ffffff;
+        }
+
+        .text-center {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            color: #8e8d8d;
+            font-size: 14px;
+        }
+
+        @media (max-width: 767px) {
+            .login-wrapper {
+                justify-content: center;
+                padding-right: 0;
+            }
+
+            .login-screen {
+                padding: 0 15px;
+            }
+
+            .login-form {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="login-wrapper">
+        <div class="login-screen col-xs-12 col-sm-4">
+            <div class="well">
+                <div class="login-form">
+                    <div class="col-xs-12 col-sm-12" style="padding-left: 0px;margin-bottom: 10px;">
+                        <div class="col-xs-12 col-sm-3" style="padding-left: 0px"></div>
+                        <div class="col-xs-12 col-sm-8 pl-0">
+                            <p id="profile-name" class="profile-name-card">{:$Think.config.site.name}</p>
+                        </div>
+                    </div>
+                    <form action="" method="post" id="login-form">
+                        <!--@AdminLoginFormBegin-->
+                        <div id="errtips" class="hide"></div>
+                        {:token()}
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"
+                                                                 aria-hidden="true"></span></div>
+                            <input type="text" class="form-control" id="pd-form-username"
+                                   placeholder="{:__('Username')}" name="username" autocomplete="off" value=""
+                                   data-rule="{:__('Username')}:required;username"/>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"
+                                                                 aria-hidden="true"></span></div>
+                            <input type="password" class="form-control" id="pd-form-password"
+                                   placeholder="{:__('Password')}" name="password" autocomplete="off" value=""
+                                   data-rule="{:__('Password')}:required;password"/>
+                        </div>
+                        <!--@CaptchaBegin-->
+                        {if $Think.config.fastadmin.login_captcha}
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal"
+                                                                 aria-hidden="true"></span></div>
+                            <input type="text" name="captcha" class="form-control" placeholder="{:__('Captcha')}"
+                                   data-rule="{:__('Captcha')}:required;length({$Think.config.captcha.length})"
+                                   autocomplete="off"/>
+                            <span class="input-group-addon" style="padding:0;border:none;cursor:pointer;">
+                                    <img src="{:rtrim('__PUBLIC__', '/')}/index.php?s=/captcha" width="100" height="30"
+                                         onclick="this.src = '{:rtrim('__PUBLIC__', '/')}/index.php?s=/captcha&r=' + Math.random();"/>
+                            </span>
+                        </div>
+                        {/if}
+                        <!--@CaptchaEnd-->
+                        {if $keeyloginhours>0}
+                        <div class="form-group checkbox">
+                            <label class="inline" for="keeplogin" data-toggle="tooltip"
+                                   title="{:__('The duration of the session is %s hours', $keeyloginhours)}">
+                                <input type="checkbox" name="keeplogin" id="keeplogin" value="1"/>
+                                {:__('Keep login')}
+                            </label>
+                        </div>
+                        {/if}
+                        <div class="form-group">
+                            <button id="login-btn" type="submit" class="btn btn-success btn-lg btn-block">{:__('Sign in')}
+                            </button>
+                        </div>
+                        <!--@AdminLoginFormEnd-->
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="col-xs-12 col-sm-12 text-center">
+    <p>Copyright © 2024 {:$Think.config.site.name} All Rights Reserved</p>
+</div>
+{include file="common/script" /}
+</body>
+</html>
