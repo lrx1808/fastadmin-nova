@@ -2,12 +2,12 @@
 <html>
 <head>
     {include file="common/meta" /}
-
     <style type="text/css">
         body {
             color: #666;
             background-size: cover;
             background-color: #e8edf0;
+            background-image: url('/assets/img/login-background.jpg');
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -101,22 +101,23 @@
         }
 
         #login-btn {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            border: none;
+            background-color: #667eea;
+            border-color: #667eea;
+            color: #fff;
             height: 46px;
             font-size: 16px;
             font-weight: 500;
             letter-spacing: 1px;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-            color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 5px 15px rgba(64, 158, 255, 0.3);
             transition: all 0.3s ease;
         }
-
+        
         #login-btn:hover {
+            background-color: #667eea;
+            border-color: #667eea;
+            color: #fff;
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
-            color: #ffffff;
         }
 
         .form-group.checkbox {
@@ -236,7 +237,7 @@
 
 </div>
 <div class="col-xs-12 col-sm-12 text-center">
-    <p>Copyright © 2024 {:$Think.config.site.name} All Rights Reserved</p>
+    <p>Copyright © 2025 {:$Think.config.site.name} All Rights Reserved</p>
 </div>
 {include file="common/script" /}
 </body>
