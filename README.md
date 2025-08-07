@@ -6,15 +6,19 @@
 
 项目拉下来后，在根目录执行命令 ```composer insatll``` 安装php依赖包，执行命令 ```bower install``` 安装前端依赖包
 
+在线演示：计划部署ing
+
 ## 界面截图
 
-<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/login_new.png" style="width:800px">
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/login.png" style="width:800px">
   
-<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/admin_new.png" style="width:800px">
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/bashboard1.png" style="width:800px">
   
-<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/layer_new.png" style="width:800px">
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/bashboard2.png" style="width:800px">
 
-## 老项目如何升级成FastAdmin-Nova
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/frame.png" style="width:800px">
+
+## FastAdmin 老项目向 FastAdmin-Nova 升级的迁移步骤
 
 ### 1. 核心文件
 复制核心文件public/assets/css/fastadmin-nova.css，在你项目的application/admin/view/common/meta.html中引用该css文件
