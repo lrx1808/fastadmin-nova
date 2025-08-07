@@ -12,9 +12,9 @@
 
 <img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/login.png" style="width:800px">
   
-<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/bashboard1.png" style="width:800px">
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/dashboard1.png" style="width:800px">
   
-<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/bashboard2.png" style="width:800px">
+<img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/dashboard2.png" style="width:800px">
 
 <img src="https://github.com/lrx1808/fastadmin-nova/blob/main/public/assets/img/readme/frame.png" style="width:800px">
 
