@@ -3,6 +3,7 @@
 namespace app\admin\controller;
 
 use app\admin\model\Admin;
+use app\admin\model\AdminLog;
 use app\admin\model\User;
 use app\common\controller\Backend;
 use app\common\model\Attachment;
@@ -60,6 +61,7 @@ class Dashboard extends Backend
             'totalcategory'     => \app\common\model\Category::count(),
             'todayusersignup'   => User::whereTime('jointime', 'today')->count(),
             'todayuserlogin'    => User::whereTime('logintime', 'today')->count(),
+            'todayadminlogin'   => Admin::whereTime('logintime', 'today')->count(),
             'sevendau'          => User::whereTime('jointime|logintime|prevtime', '-7 days')->count(),
             'thirtydau'         => User::whereTime('jointime|logintime|prevtime', '-30 days')->count(),
             'threednu'          => User::whereTime('jointime', '-3 days')->count(),
@@ -73,6 +75,7 @@ class Dashboard extends Backend
             'attachmentsize'    => Attachment::sum('filesize'),
             'picturenums'       => Attachment::where('mimetype', 'like', 'image/%')->count(),
             'picturesize'       => Attachment::where('mimetype', 'like', 'image/%')->sum('filesize'),
+            'recentLogList'     => AdminLog::getRecentLog(),
         ]);
 
         $this->assignconfig('column', array_keys($userlist));

@@ -2,7 +2,9 @@
 
 namespace app\admin\model;
 
+use app\admin\helper\DateTimeHelper;
 use app\admin\library\Auth;
+use think\Db;
 use think\Model;
 use think\Loader;
 
@@ -114,4 +116,19 @@ class AdminLog extends Model
     {
         return $this->belongsTo('Admin', 'admin_id')->setEagerlyType(0);
     }
+
+    /**
+     * 获取最近的操作日志
+     * @param int $count 查询条数
+     * @return array
+     */
+    public static function getRecentLog($count = 5)
+    {
+        $list = self::where('id', '>', 0)->order('createtime', 'desc')->limit($count)->select();
+        foreach ($list as &$item) {
+            $item['createtime'] = DateTimeHelper::formatDatetime($item['createtime']);
+        }
+        return $list;
+    }
+
 }
