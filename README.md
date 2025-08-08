@@ -1,12 +1,12 @@
 ## FastAdmin-Nova：更美观、简洁的FastAdmin界面！
 
-本项目基于 [FastAdmin](https://doc.fastadmin.net) 进行二次开发，专注于优化 FastAdmin 的 UI 体验，以适配更现代的使用场景
+本项目基于 [FastAdmin](https://doc.fastadmin.net) 进行二次开发，致力于优化 FastAdmin 的 UI 体验，以适配更现代的使用场景
 
 在此衷心感谢 FastAdmin 原作者及其团队为开源社区所做出的杰出贡献
 
 项目拉下来后，在根目录执行命令 ```composer insatll``` 安装php依赖包，执行命令 ```bower install``` 安装前端依赖包
 
-在线演示：计划部署ing
+在线演示：[点击进入](http://120.55.183.219/DTCFuHepVL.php)
 
 ## 界面截图
 
