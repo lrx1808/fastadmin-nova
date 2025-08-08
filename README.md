@@ -6,7 +6,7 @@
 
 项目拉下来后，在根目录执行命令 ```composer insatll``` 安装php依赖包，执行命令 ```bower install``` 安装前端依赖包
 
-在线演示：[点击进入](http://120.55.183.219/DTCFuHepVL.php)
+在线演示：[点击进入](http://120.55.183.219/DTCFuHepVL.php) ，账号：admin，密码：admin123456
 
 ## 界面截图
 
