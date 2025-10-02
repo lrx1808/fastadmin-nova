@@ -134,6 +134,9 @@ class Backend extends Controller
         // 检测IP是否允许
         check_ip_allowed();
 
+        // 演示模式限制
+        // $this->startDemoModel();
+
         $this->auth = Auth::instance();
 
         // 设置当前请求的URI
@@ -228,6 +231,23 @@ class Backend extends Controller
         $this->assign('auth', $this->auth);
         //渲染管理员对象
         $this->assign('admin', Session::get('admin'));
+    }
+
+    /**
+     * 开启演示模式限制
+     */
+    protected function startDemoModel()
+    {
+        // 当前操作名称
+        $action = $this->request->action();
+
+        // 禁止的操作列表
+        $forbiddenActions = ['add', 'edit', 'del', 'destroy', 'multi', 'restore', 'upload'];
+
+        // 如果是演示模式且是修改数据的操作，则禁止
+        if (in_array($action, $forbiddenActions) && $this->request->isPost()) {
+            $this->error('当前为演示环境，不允许新增、修改和删除数据');
+        }
     }
 
     /**
